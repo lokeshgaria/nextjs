@@ -1,6 +1,6 @@
  import {useRouter} from "next/router"
 
-const pageNo = () => {
+const PageNo = () => {
     const router = useRouter();
     
     const param = router.query.pageNo;
@@ -11,4 +11,4 @@ const pageNo = () => {
     )
 }
 
-export default pageNo 
+export default PageNo 
