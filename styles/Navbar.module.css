@@ -1,0 +1,324 @@
+
+.header {
+  width: 100%;
+  
+  top: 0;
+  /* position: fixed; */
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  /* height: 71px; */
+  padding: 10px 0;
+}
+
+.logo_text{
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 3rem;
+ margin: 0;
+}
+.logo_text > span{
+  font-weight: 500;
+}
+.navbar {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+ 
+  .navbar__brand {
+    width: 304px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  
+}
+.brandImg {
+  width: 45%;
+  height: 100%;
+}
+
+.logoTextDiv{
+  width: 212px;
+    margin-left: 7px;
+}
+
+.logoTextDiv > small{
+  font-size: 16px;
+    padding: -9px;
+    margin: -15px 0;
+    position: relative;
+    top: -10px;
+}
+
+.brandImg > img {
+  width: 100%;
+  height: 100%;
+}
+.navbar__brand > p , .firstContent__top >p{
+  margin: 0;
+  /* width: 100%; */
+  flex: 1;
+  margin-left : 12px;
+   
+  color: #5a4848;
+   
+   
+}
+
+.navbar__brand > p > span , .firstContent__top >p > span{
+  color: #908585;
+}
+.navbar__list {
+  /* display: flex; */
+  /* flex: 0; */
+  width: 56%;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-betwe;
+}
+
+.navbar__list > ul {
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.navbar__list > ul > li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.arrowBottom {
+  margin-left: 7px;
+}
+.navbar__icons {
+  width: 11%;
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchDiv {
+    position: absolute;
+    outline: none;
+    background: #f9fafb;
+    display: none;
+    border: 1px solid #e9ecef;
+    /* padding: 1rem; */
+    width: 18%;
+    height: 39px;
+    top: 8rem;
+    margin: 9p auto;
+    right: 15rem;
+}
+
+.searchform {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  padding-left: 12px;
+}
+
+.searchform > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.searchform > button {
+  display: none;
+}
+
+.display{
+  display: block !important;
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+.search,
+.instagram,
+.facebook,
+.instagram,
+.pintrest {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  font-size: 20px;
+}
+.hamburger {
+  display: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.hoverEfect {
+  opacity: 1 !important;
+
+  top: 11% !important;
+  transition: all 0.4s linear;
+}
+
+.productDisc {
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    top: 114%;
+    z-index: 9;
+    margin-left: 10rem;
+    width: 24%;
+    transition: all 0.2s linear;
+    /* border: 1px solid; */
+    box-shadow: 1px 3px 6px #bab5b5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.productList {
+  font-size: 1.7rem;
+  width: 100%;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.productList > li {
+  cursor: pointer;
+  width: 100%;
+  list-style: none;
+  padding: 8px;
+}
+.productList > li:hover {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  background: rgb(219, 214, 211);
+}
+@media (max-width: 480px) {
+  .navbar__list {
+    display: none;
+  }
+  .instagram,
+  .facebook,
+  .instagram,
+  .pintrest {
+    display: none;
+  }
+  .hamburger {
+    font-size: 20px;
+    margin-left: 6px;
+    width: 39px;
+    height: 38px;
+    display: block;
+  }
+
+  .search {
+    /* font-size: 18px; */
+    width: 30px;
+    height: 30px;
+  }
+
+  .search > svg,
+  .hamburger > svg {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar__brand {
+    width: 228px;
+    height: 51px;
+  }
+  .header {
+    width: 100%;
+    top: 0;
+    position: sticky;
+    background: rgb(255 255 255);
+    z-index: 1;
+    height: 71px;
+    padding: 10px 0;
+  }
+  .navbar {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    max-width: 1280px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 !important;
+  }
+  /* .navbar__icons > input {
+  position: absolute;
+  top: 52px;
+  outline: none;
+  left: auto;
+  width: 350px;
+  right: 5px;
+  
+  opacity: 0;
+  border: 1px solid #e9ecef;
+  padding: 1rem;
+} */
+  .searchDiv {
+    position: absolute;
+    outline: none;
+    background: #f9fafb;
+    display: none;
+    border: 1px solid #e9ecef;
+    /* padding: 1rem; */
+    width: 96%;
+    height: 51px;
+    top: 7rem;
+    margin: 0 7px;
+   
+    right: 0;
+  }
+
+ .shiftRight{
+  left: 0 !important;
+  transition: all .5s linear;
+  margin-left: 0;
+ }
+.productDisc {
+    opacity: 1;
+    position: absolute;
+    background: #fff;
+    top: 114%;
+    left: -200%;
+    /* margin-left: 9rem; */
+    width: 100%;
+    transition: all .5s linear;
+}
+}
